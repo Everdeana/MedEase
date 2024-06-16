@@ -31,6 +31,7 @@ ALLOWED_UPLOAD_EXTENSIONS = ['pdf', 'jpg', 'jpeg', 'png']
 
 
 # Application definition
+APPEND_SLASH = False
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -42,8 +43,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'chatbot',
     'corsheaders',
-    'example_app',
     'idcard',
+    'prediction',
 ]
 
 MIDDLEWARE = [
@@ -86,7 +87,7 @@ DATABASES = {
         'NAME': 'medeasedb',
         'USER': 'medease',
         'PASSWORD': '@ai1234@',
-        'HOST': '211.216.177.2',
+        'HOST': '192.168.75.25',
         'PORT': '3306'
     }
 }
@@ -127,6 +128,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = "static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/') # 추가
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'staticfiles/'), ) # 추가
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -134,41 +137,40 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
+# CORS_ORIGIN_WHITELIST = [
+#     'http://211.216.177.2:11000',
+# ]
 
-CORS_ORIGIN_WHITELIST = [
-    'http://211.216.177.2:11000',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://211.216.177.2:11000',
+#     # 'http://localhost:11031', 
+#     # 또는 'http://211.216.177.2:11031' (로컬 주소에 따라 다름)
+# ]
+# CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ALLOWED_CREDENTIALS = True
 
-CORS_ALLOWED_ORIGINS = [
-    'http://211.216.177.2:11000',
-    # 'http://localhost:11031', 
-    # 또는 'http://211.216.177.2:11031' (로컬 주소에 따라 다름)
-]
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOWED_CREDENTIALS = True
-
-#시험
-REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.AllowAny',
-    ],
-    'DEFAULT_RENDERER_CLASSES': [
-        'rest_framework.renderers.JSONRenderer',
-    ],
-    'DEFAULT_PARSER_CLASSES': [
-        'rest_framework.parsers.JSONParser',
-    ],
-    'AUTO_SCHEMA_GENERATE': True,
+# #시험
+# REST_FRAMEWORK = {
+#     'DEFAULT_PERMISSION_CLASSES': [
+#         'rest_framework.permissions.AllowAny',
+#     ],
+#     'DEFAULT_RENDERER_CLASSES': [
+#         'rest_framework.renderers.JSONRenderer',
+#     ],
+#     'DEFAULT_PARSER_CLASSES': [
+#         'rest_framework.parsers.JSONParser',
+#     ],
+#     'AUTO_SCHEMA_GENERATE': True,
     
-    'DEFAULT_PARSER_CLASSES': [
-        'rest_framework.parsers.JSONParser',
-        'rest_framework.parsers.FormParser',
-        'rest_framework.parsers.MultiPartParser',
-    ],
-}
+#     'DEFAULT_PARSER_CLASSES': [
+#         'rest_framework.parsers.JSONParser',
+#         'rest_framework.parsers.FormParser',
+#         'rest_framework.parsers.MultiPartParser',
+#     ],
+# }
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'idcard')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
