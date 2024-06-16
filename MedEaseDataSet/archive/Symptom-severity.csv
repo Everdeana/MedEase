@@ -1,0 +1,134 @@
+SymptomEn,SymptomKo,weight
+itching,가려움,1
+skin_rash,피부 발진,3
+nodal_skin_eruptions,결절성 피부 발진,4
+continuous_sneezing,계속되는 재채기,4
+shivering,떨림,5
+chills,오한,3
+joint_pain,관절통,3
+stomach_pain,복통,5
+acidity,위산 과다,3
+ulcers_on_tongue,혀의 궤양,4
+muscle_wasting,근육 소모,3
+vomiting,구토,5
+burning_micturition,배뇨 시 작열감,6
+spotting_urination,소변에 혈점,6
+fatigue,피로,4
+weight_gain,체중 증가,3
+anxiety,불안,4
+cold_hands_and_feets,손발이 차가움,5
+mood_swings,기분 변화,3
+weight_loss,체중 감소,3
+restlessness,불안정,5
+lethargy,무기력,2
+patches_in_throat,목의 반점,6
+irregular_sugar_level,불규칙한 혈당 수치,5
+cough,기침,4
+high_fever,고열,7
+sunken_eyes,눈이 움푹 들어감,3
+breathlessness,숨 가쁨,4
+sweating,발한,3
+dehydration,탈수,4
+indigestion,소화 불량,5
+headache,두통,3
+yellowish_skin,황달,3
+dark_urine,짙은 소변,4
+nausea,메스꺼움,5
+loss_of_appetite,식욕 감퇴,4
+pain_behind_the_eyes,눈 뒤 통증,4
+back_pain,요통,3
+constipation,변비,4
+abdominal_pain,복부 통증,4
+diarrhoea,설사,6
+mild_fever,미열,5
+yellow_urine,황색 소변,4
+yellowing_of_eyes,눈의 황변,4
+acute_liver_failure,급성 간부전,6
+fluid_overload,체액 과다,6
+swelling_of_stomach,복부 팽만,7
+swelled_lymph_nodes,림프절 종창,6
+malaise,불쾌감,6
+blurred_and_distorted_vision,시야 흐림 및 왜곡,5
+phlegm,가래,5
+throat_irritation,목 자극,4
+redness_of_eyes,눈의 발적,5
+sinus_pressure,부비동 압력,4
+runny_nose,콧물,5
+congestion,충혈,5
+chest_pain,흉통,7
+weakness_in_limbs,팔다리 약화,7
+fast_heart_rate,빠른 심박수,5
+pain_during_bowel_movements,배변 시 통증,5
+pain_in_anal_region,항문 부위 통증,6
+bloody_stool,혈변,5
+irritation_in_anus,항문 자극,6
+neck_pain,목 통증,5
+dizziness,어지럼증,4
+cramps,경련,4
+bruising,멍,4
+obesity,비만,4
+swollen_legs,다리 부종,5
+swollen_blood_vessels,혈관 부종,5
+puffy_face_and_eyes,얼굴 및 눈의 부종,5
+enlarged_thyroid,갑상선 비대,6
+brittle_nails,부서지기 쉬운 손톱,5
+swollen_extremeties,사지 부종,5
+excessive_hunger,과도한 식욕,4
+extra_marital_contacts,혼외 관계,5
+drying_and_tingling_lips,건조하고 저린 입술,4
+slurred_speech,발음이 부정확한 말,4
+knee_pain,무릎 통증,3
+hip_joint_pain,고관절 통증,2
+muscle_weakness,근육 약화,2
+stiff_neck,뻣뻣한 목,4
+swelling_joints,관절 부종,5
+movement_stiffness,움직임 경직,5
+spinning_movements,회전 운동,6
+loss_of_balance,균형 상실,4
+unsteadiness,불안정성,4
+weakness_of_one_body_side,한쪽 신체 약화,4
+loss_of_smell,후각 상실,3
+bladder_discomfort,방광 불편감,4
+foul_smell_ofurine,악취 나는 소변,5
+continuous_feel_of_urine,지속적인 배뇨감,6
+passage_of_gases,가스 배출,5
+internal_itching,내부 가려움,4
+toxic_look_(typhos),독성 외관 (티포스),5
+depression,우울증,3
+irritability,과민성,2
+muscle_pain,근육통,2
+altered_sensorium,의식 변화,2
+red_spots_over_body,신체에 붉은 반점,3
+belly_pain,복통,4
+abnormal_menstruation,비정상적인 월경,6
+dischromic_patches,색소 변화 반점,6
+watering_from_eyes,눈물,4
+increased_appetite,식욕 증가,5
+polyuria,다뇨,4
+family_history,가족력,5
+mucoid_sputum,점액성 가래,4
+rusty_sputum,녹색 가래,4
+lack_of_concentration,집중력 부족,3
+visual_disturbances,시각 장애,3
+receiving_blood_transfusion,수혈 받음,5
+receiving_unsterile_injections,비멸균 주사 받음,2
+coma,혼수,7
+stomach_bleeding,위 출혈,6
+distention_of_abdomen,복부 팽만,4
+history_of_alcohol_consumption,음주력,5
+fluid_overload,체액 과다,4
+blood_in_sputum,객혈,5
+prominent_veins_on_calf,종아리의 두드러진 정맥,6
+palpitations,심계항진,4
+painful_walking,통증을 동반한 보행,2
+pus_filled_pimples,고름찬 여드름,2
+blackheads,블랙헤드,2
+scurring,흉터,2
+skin_peeling,피부 벗겨짐,3
+silver_like_dusting,은빛 가루 같은 피부,2
+small_dents_in_nails,손톱의 작은 홈,2
+inflammatory_nails,염증성 손톱,2
+blister,물집,4
+red_sore_around_nose,코 주위의 붉은 염증,2
+yellow_crust_ooze,황색 딱지 분비물,3
+prognosis,예후,5
