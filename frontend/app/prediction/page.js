@@ -1,43 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
+import axios from 'axios';
+import React from 'react';
+import Image from 'next/image';
+axios.defaults.baseURL = "http://211.216.177.2:12011/api";
 
 export default function Home() {
-    const messageClick = () => {
-        // 선택된 증상 데이터 수집
-        const selectedSymptoms = [];
-        document.querySelectorAll(".form-checkbox:checked").forEach((checkbox) => {
-            selectedSymptoms.push(checkbox.nextElementSibling.textContent);
-        });
-
-        // Django 서버로 데이터 전송 (Next.js 프록시 경유)
-        fetch('/api/prediction', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ symptoms: selectedSymptoms }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            Swal.fire({
-                title: "Success",
-                text: "Data sent successfully!",
-                icon: "success",
-            });
-        })
-        .catch(error => {
-            Swal.fire({
-                title: "Error",
-                text: "Failed to send data",
-                icon: "error",
-            });
-        });
-    };
-
     const [showSymptoms, setShowSymptoms] = useState({
-        whole_body: false,
+        w_body: false,
         skin: false,
         digestive: false,
         respiratory: false,
@@ -47,7 +19,7 @@ export default function Home() {
     });
 
     const [showMore, setShowMore] = useState({
-        whole_body: false,
+        w_body: false,
         skin: false,
         digestive: false,
         respiratory: false,
@@ -55,6 +27,47 @@ export default function Home() {
         nervous: false,
         musculoskeletal: false,
     });
+
+    const [data, setData] = useState('');
+
+    const getData = async () => {
+        try {
+            const response = await axios.get("/prediction/");
+            console.log(response.data);
+            setData(response.data);
+        } catch (e) {
+            console.error('Failed to fetch data:', e);
+        }
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+
+
+    const messageClick = async () => {
+        // 선택된 증상 데이터 수집
+        const selectedSymptoms = [];
+        document.querySelectorAll(".form-checkbox:checked").forEach((checkbox) => {
+            selectedSymptoms.push(checkbox.nextElementSibling.textContent);
+        });
+
+        try {
+            const response = await axios.post('/prediction/', { symptoms: selectedSymptoms });
+            Swal.fire({
+                title: "Success",
+                text: "Data sent successfully!",
+                icon: "success",
+            });
+        } catch (error) {
+            Swal.fire({
+                title: "Error",
+                text: "Failed to send data",
+                icon: "error",
+            });
+        }
+    };
 
     const toggleSymptoms = (category) => {
         setShowSymptoms((prev) => ({
@@ -89,7 +102,7 @@ export default function Home() {
                     <div className="overflow-y-auto max-h-100">
                         <div className="space-y-4">
                             {[
-                                { category: "whole_body", title: "전신 증상", symptoms: ["떨림", "오한", "피로", "체중 증가", "불안", "손발이 차가움", "체중 감소", "무기력", "복부 팽만", "고열", "발한", "빠른 심박수", "탈수"], img: "assets/image/symtom/body.png" },
+                                { category: "w_body", title: "전신 증상", symptoms: ["떨림", "오한", "피로", "체중 증가", "불안", "손발이 차가움", "체중 감소", "무기력", "복부 팽만", "고열", "발한", "빠른 심박수", "탈수"], img: "assets/image/symtom/body.png" },
                                 { category: "skin", title: "피부 관련 증상", symptoms: ["가려움", "피부에 붉은 반점", "목의 반점", "피부 벗겨짐", "손톱의 작은 홈", "물집", "얼굴 및 눈의 부종", "멍", "황달"], img: "assets/image/symtom/face.png" },
                                 { category: "digestive", title: "소화기계 관련 증상", symptoms: ["복통", "혀의 궤양", "구토", "변비", "복부 통증", "설사", "소화 불량", "메스꺼움", "식욕 감퇴", "복부 팽만", "복통", "불규칙한 혈당 수치", "비만", "과도한 식욕"], img: "assets/image/symtom/stomach.png" },
                                 { category: "respiratory", title: "호흡기계 관련 증상", symptoms: ["계속되는 재채기", "숨 가쁨", "기침", "고열", "가래", "콧물", "충혈", "흉통", "점액성 가래", "객혈"], img: "assets/image/symtom/lungs.png" },
@@ -111,7 +124,6 @@ export default function Home() {
                                                 <input type="checkbox" className="form-checkbox" />
                                                 <span>{symptom}</span>
                                             </label>
-
                                         ))}
                                     </div>
 
@@ -142,6 +154,31 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            <footer className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+                <div className="flex justify-around p-2">
+                    <div className="flex flex-col items-center">
+                        <Image src="/assets/image/bar-1.png" alt="홈" width={32} height={32} />
+                        <span className="text-xs">홈</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <Image src="/assets/image/bar2.png" alt="검색" width={32} height={32} />
+                        <span className="text-xs">검색</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <Image src="/assets/image/bar3.png" alt="마이페이지" width={32} height={32} />
+                        <span className="text-xs">마이페이지</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <Image src="/assets/image/bar4.png" alt="챗봇 서비스" width={32} height={32} />
+                        <span className="text-xs">챗봇 서비스</span>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <Image src="/assets/image/bar5.png" alt="병원 예약" width={32} height={32} />
+                        <span className="text-xs">병원 예약</span>
+                    </div>
+                </div>
+            </footer>
+
         </>
     );
 }
