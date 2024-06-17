@@ -1,9 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Swal from "sweetalert2";
 import axios from 'axios';
-import React from 'react';
 import Image from 'next/image';
 axios.defaults.baseURL = "http://211.216.177.2:12011/api";
 
@@ -28,47 +27,6 @@ export default function Home() {
         musculoskeletal: false,
     });
 
-    const [data, setData] = useState('');
-
-    const getData = async () => {
-        try {
-            const response = await axios.get("/prediction/");
-            console.log(response.data);
-            setData(response.data);
-        } catch (e) {
-            console.error('Failed to fetch data:', e);
-        }
-    };
-
-    useEffect(() => {
-        getData();
-    }, []);
-
-
-
-    const messageClick = async () => {
-        // 선택된 증상 데이터 수집
-        const selectedSymptoms = [];
-        document.querySelectorAll(".form-checkbox:checked").forEach((checkbox) => {
-            selectedSymptoms.push(checkbox.nextElementSibling.textContent);
-        });
-
-        try {
-            const response = await axios.post('/prediction/', { symptoms: selectedSymptoms });
-            Swal.fire({
-                title: "Success",
-                text: "Data sent successfully!",
-                icon: "success",
-            });
-        } catch (error) {
-            Swal.fire({
-                title: "Error",
-                text: "Failed to send data",
-                icon: "error",
-            });
-        }
-    };
-
     const toggleSymptoms = (category) => {
         setShowSymptoms((prev) => ({
             ...prev,
@@ -81,6 +39,28 @@ export default function Home() {
             ...prev,
             [category]: !prev[category],
         }));
+    };
+
+    const messageClick = async () => {
+        const selectedSymptoms = [];
+        document.querySelectorAll(".form-checkbox:checked").forEach((checkbox) => {
+            selectedSymptoms.push(checkbox.nextElementSibling.textContent);
+        });
+
+        try {
+            const response = await axios.post('/prediction/', { symptoms: selectedSymptoms });
+            Swal.fire({
+                title: "성공",
+                text: "데이터가 성공적으로 전송되었습니다!",
+                icon: "success",
+            });
+        } catch (error) {
+            Swal.fire({
+                title: "오류",
+                text: "데이터 전송에 실패했습니다.",
+                icon: "error",
+            });
+        }
     };
 
     return (
