@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Swal from "sweetalert2";
 import axios from 'axios';
 import Image from 'next/image';
@@ -19,6 +19,7 @@ export default function Home() {
         musculoskeletal: { show: false, more: false },
     });
 
+<<<<<<< HEAD
     const toggleState = (category, key) => {
         setSymptomsState((prev) => ({
             ...prev,
@@ -54,6 +55,53 @@ export default function Home() {
     useEffect(() => {
         console.log("페이지가 로드되었습니다.");
     }, []);
+=======
+    const [showMore, setShowMore] = useState({
+        w_body: false,
+        skin: false,
+        digestive: false,
+        respiratory: false,
+        urinary: false,
+        nervous: false,
+        musculoskeletal: false,
+    });
+
+    const toggleSymptoms = (category) => {
+        setShowSymptoms((prev) => ({
+            ...prev,
+            [category]: !prev[category],
+        }));
+    };
+
+    const toggleMore = (category) => {
+        setShowMore((prev) => ({
+            ...prev,
+            [category]: !prev[category],
+        }));
+    };
+>>>>>>> 748002ebf533b9796ddb3b126567aeb723542d4c
+
+    const messageClick = async () => {
+        const selectedSymptoms = [];
+        document.querySelectorAll(".form-checkbox:checked").forEach((checkbox) => {
+            selectedSymptoms.push(checkbox.nextElementSibling.textContent);
+        });
+
+        try {
+            const response = await axios.post('/prediction/', { symptoms: selectedSymptoms });
+            Swal.fire({
+                title: "성공",
+                text: "데이터가 성공적으로 전송되었습니다!",
+                icon: "success",
+            });
+        } catch (error) {
+            Swal.fire({
+                title: "오류",
+                text: "데이터 전송에 실패했습니다.",
+                icon: "error",
+            });
+        }
+    };
 
     return (
         <>
