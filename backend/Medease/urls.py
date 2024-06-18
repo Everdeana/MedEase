@@ -1,5 +1,5 @@
 """
-URL configuration for Medease project.
+URL configuration for MedEase project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -19,14 +19,23 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
+# example_app 가동용 나중에 삭제
+# from example_app.views import hello
+# from example_app.views import hello_rest_api
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # example_app 가동용 나중에 삭제
+    # path('hello/', hello),
+    # path('api/hello/', hello_rest_api, name='hello_rest_api'),
     path('api/', include('chatbot.urls')),
+    path("example_app/", include("example_app.urls")),
     path('idcard/', include("idcard.urls")),
     path('api/', include('prediction.urls')),
-]
+    path('web/', include('web.urls')),
+    # path('api/prediction/', include('prdresult.urls')),
 
-urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # static
 urlpatterns = urlpatterns + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT)

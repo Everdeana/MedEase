@@ -3,90 +3,62 @@
 import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import axios from 'axios';
-import React from 'react';
 import Image from 'next/image';
+import { useRouter } from "next/navigation";
 axios.defaults.baseURL = "http://211.216.177.2:12011/api";
 
 export default function Home() {
-    const [showSymptoms, setShowSymptoms] = useState({
-        w_body: false,
-        skin: false,
-        digestive: false,
-        respiratory: false,
-        urinary: false,
-        nervous: false,
-        musculoskeletal: false,
+    const router = useRouter();
+    const [symptomsState, setSymptomsState] = useState({
+        w_body: { show: false, more: false },
+        skin: { show: false, more: false },
+        digestive: { show: false, more: false },
+        respiratory: { show: false, more: false },
+        urinary: { show: false, more: false },
+        nervous: { show: false, more: false },
+        musculoskeletal: { show: false, more: false },
     });
 
-    const [showMore, setShowMore] = useState({
-        w_body: false,
-        skin: false,
-        digestive: false,
-        respiratory: false,
-        urinary: false,
-        nervous: false,
-        musculoskeletal: false,
-    });
-
-    const [data, setData] = useState('');
-
-    const getData = async () => {
-        try {
-            const response = await axios.get("/prediction/");
-            console.log(response.data);
-            setData(response.data);
-        } catch (e) {
-            console.error('Failed to fetch data:', e);
-        }
+    const toggleState = (category, key) => {
+        setSymptomsState((prev) => ({
+            ...prev,
+            [category]: { ...prev[category], [key]: !prev[category][key] },
+        }));
     };
 
-    useEffect(() => {
-        getData();
-    }, []);
-
-
-
     const messageClick = async () => {
-        // 선택된 증상 데이터 수집
         const selectedSymptoms = [];
         document.querySelectorAll(".form-checkbox:checked").forEach((checkbox) => {
             selectedSymptoms.push(checkbox.nextElementSibling.textContent);
         });
 
         try {
-            const response = await axios.post('/prediction/', { symptoms: selectedSymptoms });
+            // const response = await axios.post('/prediction/', { symptoms: selectedSymptoms });
+            localStorage.setItem('selectedSymptoms', JSON.stringify(selectedSymptoms)); // Save to localStorage
             Swal.fire({
-                title: "Success",
-                text: "Data sent successfully!",
+                title: "성공",
+                text: "데이터가 성공적으로 전송되었습니다!",
                 icon: "success",
-            });
+            }).then(() => {
+                router.push('/prediction/prdresult'); // 성공 시 페이지 이동
+            });            
         } catch (error) {
             Swal.fire({
-                title: "Error",
-                text: "Failed to send data",
+                title: "오류",
+                text: "데이터 전송에 실패했습니다.",
                 icon: "error",
             });
         }
     };
 
-    const toggleSymptoms = (category) => {
-        setShowSymptoms((prev) => ({
-            ...prev,
-            [category]: !prev[category],
-        }));
-    };
-
-    const toggleMore = (category) => {
-        setShowMore((prev) => ({
-            ...prev,
-            [category]: !prev[category],
-        }));
-    };
+    useEffect(() => {
+        console.log("페이지가 로드되었습니다.");
+    }, []);
 
     return (
         <>
             <section className="bg-gray-100 p-4">
-                <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6">
+                <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6" style={{ marginBottom: '50px' }}>
                     <h2 className="text-xl font-semibold mb-4 text-center">증상 선택</h2>
                     <p className="text-gray-700 mb-4 text-center">
                         안녕하세요! 유저님
@@ -111,14 +83,14 @@ export default function Home() {
                                 { category: "musculoskeletal", title: "근골격계 관련 증상", symptoms: ["관절통", "요통", "목 통증", "무릎 통증", "고관절 통증", "관절 부종", "배변 시 통증", "항문 부위 통증"], img: "assets/image/symtom/bone.png" },
                             ].map((section) => (
                                 <div key={section.category} className="flex flex-col space-y-2 border border-gray-200 p-4 rounded-md">
-                                    <div className="flex items-center justify-between cursor-pointer" onClick={() => toggleSymptoms(section.category)}>
+                                    <div className="flex items-center justify-between cursor-pointer" onClick={() => toggleState(section.category, 'show')}>
                                         <div className="flex items-center space-x-4">
                                             <img src={section.img} width="50" height="50" alt={`${section.title} 이미지`} />
                                             <h3 className="font-semibold">{section.title}</h3>
                                         </div>
-                                        <span>{showSymptoms[section.category] ? "▲" : "▼"}</span>
+                                        <span>{symptomsState[section.category].show ? "▲" : "▼"}</span>
                                     </div>
-                                    <div className={`grid grid-cols-2 gap-2 transition-all duration-500 ease-in-out overflow-hidden ${showSymptoms[section.category] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className={`grid grid-cols-2 gap-2 transition-all duration-500 ease-in-out overflow-hidden ${symptomsState[section.category].show ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                         {section.symptoms.slice(0, 6).map((symptom) => (
                                             <label key={symptom} className="flex items-center space-x-2">
                                                 <input type="checkbox" className="form-checkbox" />
@@ -127,12 +99,12 @@ export default function Home() {
                                         ))}
                                     </div>
 
-                                    {showSymptoms[section.category] && section.symptoms.length > 6 && (
+                                    {symptomsState[section.category].show && section.symptoms.length > 6 && (
                                         <div className="mt-2">
-                                            <div className="flex justify-center cursor-pointer" onClick={() => toggleMore(section.category)}>
-                                                <span className="bg-gray-100 rounded-full px-4 py-1 shadow">{showMore[section.category] ? "접기 ▲" : "더 보기 ▼"}</span>
+                                            <div className="flex justify-center cursor-pointer" onClick={() => toggleState(section.category, 'more')}>
+                                                <span className="bg-gray-100 rounded-full px-4 py-1 shadow">{symptomsState[section.category].more ? "접기 ▲" : "더 보기 ▼"}</span>
                                             </div>
-                                            <div className={`grid grid-cols-2 gap-2 mt-2 transition-all duration-500 ease-in-out overflow-hidden ${showMore[section.category] ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                                            <div className={`grid grid-cols-2 gap-2 mt-2 transition-all duration-500 ease-in-out overflow-hidden ${symptomsState[section.category].more ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'}`}>
                                                 {section.symptoms.slice(6).map((symptom) => (
                                                     <label key={symptom} className="flex items-center space-x-2">
                                                         <input type="checkbox" className="form-checkbox" />
@@ -168,17 +140,16 @@ export default function Home() {
                         <Image src="/assets/image/bar3.png" alt="마이페이지" width={32} height={32} />
                         <span className="text-xs">마이페이지</span>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items.center">
                         <Image src="/assets/image/bar4.png" alt="챗봇 서비스" width={32} height={32} />
                         <span className="text-xs">챗봇 서비스</span>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items.center">
                         <Image src="/assets/image/bar5.png" alt="병원 예약" width={32} height={32} />
                         <span className="text-xs">병원 예약</span>
                     </div>
                 </div>
             </footer>
-
         </>
     );
 }

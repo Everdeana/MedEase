@@ -75,3 +75,44 @@ def prediction_view(request):
         return JsonResponse({'status': 'success', 'symptoms': symptoms})
     else:
         return JsonResponse({'status': 'fail', 'message': 'Only POST requests are allowed'})
+
+@csrf_exempt
+def prediction(request):
+    return JsonResponse(
+        "벡엔드의 prediction 데이터 API 넘기기", 
+        safe=False, 
+        json_dumps_params={'ensure_ascii':False},
+        status=200
+    )
+
+@csrf_exempt
+def predict_result(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        symptoms = data.get('symptoms', [])
+        
+        # 여기서 증상 데이터를 기반으로 예측을 수행하고 결과를 생성합니다.
+        result = "바이러스 감염일 가능성이 있습니다."  # 예측 결과 예시
+
+        return JsonResponse({'result': result})
+    return JsonResponse({'error': 'Invalid request'}, status=400)
+
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+import json
+
+@csrf_exempt
+def prediction_result(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        symptoms = data.get('symptoms', [])
+        
+        # Your prediction logic here, for now returning dummy data
+        result = {
+            'disease': '바이러스 감염',
+            'second_disease': '감기',
+            'third_disease': '파상풍',
+            'prevention': '비타민C'
+        }
+        return JsonResponse(result)
+    return JsonResponse({'error': 'Invalid request'}, status=400)

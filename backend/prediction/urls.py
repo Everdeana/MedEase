@@ -9,4 +9,10 @@ urlpatterns = [
 		# v1 API
     path('getprdmodel/', views.getprdmodel, name = 'getprdmodel'),
     path('prediction/', views.prediction_view, name='prediction_view'),
+    path('prediction/', views.prediction),
+    # path('prediction/prdresult/', views.predict_result, name='predict_result'),
+    # myproject/urls.py
+    # path('prediction/prdresult/', views.prediction_result_view, name='prediction_result_view'),
+    # path('prediction/prdresult/', views.prdresult),
+    
 ]
