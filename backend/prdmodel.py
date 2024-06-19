@@ -3,7 +3,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.metrics import accuracy_score, classification_report
-import joblib
 
 # 데이터 로드
 data = pd.read_csv('./model/disease_symptoms_combined_1.csv')
@@ -37,17 +36,13 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 model = LogisticRegression(max_iter=1000)
 model.fit(X_train, y_train)
 
-# 모델 저장
-joblib.dump(model, './model/disease_prediction_model.joblib')
-joblib.dump(mlb, './model/mlb.joblib')
-
 # 예측
 y_pred = model.predict(X_test)
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print(classification_report(y_test, y_pred))
 
-# 새로운 증상으로 예측 함수
-def predict_disease(symptoms, model, mlb):
+# 새로운 증상으로 예측
+def predict_disease(symptoms):
     input_data = pd.DataFrame([0]*len(mlb.classes_), index=mlb.classes_).T
     for symptom in symptoms:
         if symptom in input_data.columns:
@@ -58,5 +53,5 @@ def predict_disease(symptoms, model, mlb):
 
 # 예측 예시
 new_symptoms = ['호흡곤란', '협심증', '땀증가', '거식증', '가슴불편감']
-predicted_diseases = predict_disease(new_symptoms, model, mlb)
+predicted_diseases = predict_disease(new_symptoms)
 print("Predicted Diseases:", predicted_diseases)

@@ -5,6 +5,8 @@ import Swal from "sweetalert2";
 import axios from 'axios';
 import Image from 'next/image';
 import { useRouter } from "next/navigation";
+import { IoIosArrowBack } from "react-icons/io"; // 아이콘 임포트
+import NavigationBar from '../components/NavigationBar'; // 네비게이션 바 컴포넌트 임포트
 axios.defaults.baseURL = "http://211.216.177.2:12011/api";
 
 export default function Home() {
@@ -57,7 +59,13 @@ export default function Home() {
 
     return (
         <>
-            <section className="bg-gray-100 p-4">
+            <header style={{ backgroundColor: '#53b0db', padding: '20px', color: 'white', marginBottom: '20px', position: 'relative' }}>
+                <div style={{ position: 'absolute', left: '20px', top: '50%', transform: 'translateY(-50%)' }}>
+                <IoIosArrowBack className="mr-2 cursor-pointer" onClick={() =>window.location.href = '/'} /> 
+                </div>
+                <h1 style={{ textAlign: 'center' }} className="text-lg font-bold">증상 선택</h1>
+            </header>
+            <section className="bg-white p-4">
                 <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6" style={{ marginBottom: '50px' }}>
                     <h2 className="text-xl font-semibold mb-4 text-center">증상 선택</h2>
                     <p className="text-gray-700 mb-4 text-center">
@@ -74,13 +82,13 @@ export default function Home() {
                     <div className="overflow-y-auto max-h-100">
                         <div className="space-y-4">
                             {[
-                                { category: "w_body", title: "전신 증상", symptoms: ["떨림", "오한", "피로", "체중 증가", "불안", "손발이 차가움", "체중 감소", "무기력", "복부 팽만", "고열", "발한", "빠른 심박수", "탈수"], img: "assets/image/symtom/body.png" },
-                                { category: "skin", title: "피부 관련 증상", symptoms: ["가려움", "피부에 붉은 반점", "목의 반점", "피부 벗겨짐", "손톱의 작은 홈", "물집", "얼굴 및 눈의 부종", "멍", "황달"], img: "assets/image/symtom/face.png" },
-                                { category: "digestive", title: "소화기계 관련 증상", symptoms: ["복통", "혀의 궤양", "구토", "변비", "복부 통증", "설사", "소화 불량", "메스꺼움", "식욕 감퇴", "복부 팽만", "복통", "불규칙한 혈당 수치", "비만", "과도한 식욕"], img: "assets/image/symtom/stomach.png" },
-                                { category: "respiratory", title: "호흡기계 관련 증상", symptoms: ["계속되는 재채기", "숨 가쁨", "기침", "고열", "가래", "콧물", "충혈", "흉통", "점액성 가래", "객혈"], img: "assets/image/symtom/lungs.png" },
-                                { category: "urinary", title: "비뇨기계 관련 증상", symptoms: ["배뇨 시 작열감", "소변에 혈점", "탈수", "짙은 소변", "황색 소변", "방광 불편감", "심한 소변 냄새", "지속적인 배뇨감", "다뇨"], img: "assets/image/symtom/kidneys.png" },
-                                { category: "nervous", title: "신경계 관련 증상", symptoms: ["두통", "어지럼증", "경련", "시야 흐림 및 왜곡", "시각 장애", "균형 상실", "의식 변화", "후각 상실", "집중력 부족"], img: "assets/image/symtom/brain.png" },
-                                { category: "musculoskeletal", title: "근골격계 관련 증상", symptoms: ["관절통", "요통", "목 통증", "무릎 통증", "고관절 통증", "관절 부종", "배변 시 통증", "항문 부위 통증"], img: "assets/image/symtom/bone.png" },
+                                { category: "w_body", title: "전신 증상", symptoms: ["떨림", "오한", "피로", "체중 증가", "불안", "손발이 차가움", "체중 감소", "무기력", "복부 팽만", "고열", "발한", "빠른 심박수", "탈수"], img: "assets/image/symtom/body1.png" },
+                                { category: "skin", title: "피부 관련 증상", symptoms: ["가려움", "피부에 붉은 반점", "목의 반점", "피부 벗겨짐", "손톱의 작은 홈", "물집", "얼굴 및 눈의 부종", "멍", "황달"], img: "assets/image/symtom/face1.png" },
+                                { category: "digestive", title: "소화기계 관련 증상", symptoms: ["복통", "혀의 궤양", "구토", "변비", "복부 통증", "설사", "소화 불량", "메스꺼움", "식욕 감퇴", "복부 팽만", "복통", "불규칙한 혈당 수치", "비만", "과도한 식욕"], img: "assets/image/symtom/stomach1.png" },
+                                { category: "respiratory", title: "호흡기계 관련 증상", symptoms: ["계속되는 재채기", "숨 가쁨", "기침", "고열", "가래", "콧물", "충혈", "흉통", "점액성 가래", "객혈"], img: "assets/image/symtom/lungs1.png" },
+                                { category: "urinary", title: "비뇨기계 관련 증상", symptoms: ["배뇨 시 작열감", "소변에 혈점", "탈수", "짙은 소변", "황색 소변", "방광 불편감", "심한 소변 냄새", "지속적인 배뇨감", "다뇨"], img: "assets/image/symtom/kidneys1.png" },
+                                { category: "nervous", title: "신경계 관련 증상", symptoms: ["두통", "어지럼증", "경련", "시야 흐림 및 왜곡", "시각 장애", "균형 상실", "의식 변화", "후각 상실", "집중력 부족"], img: "assets/image/symtom/brain1.png" },
+                                { category: "musculoskeletal", title: "근골격계 관련 증상", symptoms: ["관절통", "요통", "목 통증", "무릎 통증", "고관절 통증", "관절 부종", "배변 시 통증", "항문 부위 통증"], img: "assets/image/symtom/bone1.png" },
                             ].map((section) => (
                                 <div key={section.category} className="flex flex-col space-y-2 border border-gray-200 p-4 rounded-md">
                                     <div className="flex items-center justify-between cursor-pointer" onClick={() => toggleState(section.category, 'show')}>
@@ -126,30 +134,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <footer className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
-                <div className="flex justify-around p-2">
-                    <div className="flex flex-col items-center">
-                        <Image src="/assets/image/bar-1.png" alt="홈" width={32} height={32} />
-                        <span className="text-xs">홈</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <Image src="/assets/image/bar2.png" alt="검색" width={32} height={32} />
-                        <span className="text-xs">검색</span>
-                    </div>
-                    <div className="flex flex-col items-center">
-                        <Image src="/assets/image/bar3.png" alt="마이페이지" width={32} height={32} />
-                        <span className="text-xs">마이페이지</span>
-                    </div>
-                    <div className="flex flex-col items.center">
-                        <Image src="/assets/image/bar4.png" alt="챗봇 서비스" width={32} height={32} />
-                        <span className="text-xs">챗봇 서비스</span>
-                    </div>
-                    <div className="flex flex-col items.center">
-                        <Image src="/assets/image/bar5.png" alt="병원 예약" width={32} height={32} />
-                        <span className="text-xs">병원 예약</span>
-                    </div>
-                </div>
-            </footer>
+            <NavigationBar /> {/* 네비게이션 바 컴포넌트 */}
         </>
     );
 }
