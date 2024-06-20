@@ -7,10 +7,13 @@ import Image from 'next/image';
 import { useRouter } from "next/navigation";
 import { IoIosArrowBack } from "react-icons/io"; // 아이콘 임포트
 import NavigationBar from '../components/NavigationBar'; // 네비게이션 바 컴포넌트 임포트
-axios.defaults.baseURL = "http://211.216.177.2:12011/api";
+import LoadingProcess from "../components/LoadingProcess";
+// axios.defaults.baseURL = "http://211.216.177.2:12000/api";
 
 export default function Home() {
     const router = useRouter();
+    const [loading, setLoading] = useState(true);
+
     const [symptomsState, setSymptomsState] = useState({
         w_body: { show: false, more: false },
         skin: { show: false, more: false },
@@ -52,10 +55,15 @@ export default function Home() {
             });
         }
     };
-
+    
     useEffect(() => {
+        setLoading(false);
         console.log("페이지가 로드되었습니다.");
     }, []);
+
+    if (loading) {
+        return <LoadingProcess />;
+    }
 
     return (
         <>
@@ -69,7 +77,7 @@ export default function Home() {
                 <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6" style={{ marginBottom: '50px' }}>
                     <h2 className="text-xl font-semibold mb-4 text-center">증상 선택</h2>
                     <p className="text-gray-700 mb-4 text-center">
-                        안녕하세요! 유저님
+                        안녕하세요! Woojin님
                         <br />
                         혹시 어디가 아프실까요?
                     </p>
@@ -128,7 +136,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex justify-center mt-4">
-                        <button className="py-4 px-24 text-black font-bold rounded-full bg-gradient-to-r from-blue-300 to-blue-400 shadow-lg" onClick={messageClick}>
+                        <button className="py-4 px-24 text-black font-bold rounded-full bg-gradient-to-r from-blue-300 to-blue-400 shadow-lg hover:text-blue-600" onClick={messageClick}>
                             선택 완료
                         </button>
                     </div>
