@@ -95,7 +95,7 @@ def get_advice(request):
                 model="gpt-3.5-turbo",  # 최신 모델 사용
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant."},
-                    {"role": "user", "content": f"Please provide simple advice for the disease: {disease}"}
+                    {"role": "user", "content": f"Please provide simple advice for the disease in korean: {disease}"}
                 ],
                 max_tokens=250
             )
