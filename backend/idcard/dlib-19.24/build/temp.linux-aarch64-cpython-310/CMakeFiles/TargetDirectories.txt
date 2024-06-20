@@ -1,0 +1,8 @@
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/_dlib_pybind11.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/edit_cache.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/rebuild_cache.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/pybind11_build/CMakeFiles/edit_cache.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/pybind11_build/CMakeFiles/rebuild_cache.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/CMakeFiles/dlib.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/CMakeFiles/edit_cache.dir
+/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/CMakeFiles/rebuild_cache.dir

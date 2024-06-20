@@ -1,0 +1,1675 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      The system is: Linux - 5.10.120-tegra - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/3.29.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/3.29.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ae3fb/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ae3fb.dir/build.make CMakeFiles/cmTC_ae3fb.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX'
+        Building C object CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -c /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64'
+         /usr/lib/gcc/aarch64-linux-gnu/9/cc1 -quiet -v -imultiarch aarch64-linux-gnu /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccpJdjcE.s
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/aarch64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: bae83efe2e4e7b8eac1a6149e340cc5c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o /tmp/ccpJdjcE.s
+        GNU assembler version 2.34 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64'
+        Linking C executable cmTC_ae3fb
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae3fb.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -Wl,-v -rdynamic CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -o cmTC_ae3fb
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ae3fb' '-mlittle-endian' '-mabi=lp64'
+         /usr/lib/gcc/aarch64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc52egB6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ae3fb /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc52egB6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ae3fb /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ae3fb' '-mlittle-endian' '-mabi=lp64'
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/aarch64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/9/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/aarch64-linux-gnu/9/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ae3fb/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_ae3fb.dir/build.make CMakeFiles/cmTC_ae3fb.dir/build]
+        ignore line: [make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-TqLJTX']
+        ignore line: [Building C object CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -c /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/9/cc1 -quiet -v -imultiarch aarch64-linux-gnu /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccpJdjcE.s]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: bae83efe2e4e7b8eac1a6149e340cc5c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o /tmp/ccpJdjcE.s]
+        ignore line: [GNU assembler version 2.34 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o' '-c' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [Linking C executable cmTC_ae3fb]
+        ignore line: [/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae3fb.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -Wl -v -rdynamic CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -o cmTC_ae3fb]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_ae3fb' '-mlittle-endian' '-mabi=lp64']
+        link line: [ /usr/lib/gcc/aarch64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc52egB6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ae3fb /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc52egB6.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_ae3fb] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cc52egB6.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_ae3fb /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_ae3fb.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9] ==> [/usr/lib/gcc/aarch64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/9;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:67 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eeac7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_eeac7.dir/build.make CMakeFiles/cmTC_eeac7.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV'
+        Building CXX object CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -c /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+         /usr/lib/gcc/aarch64-linux-gnu/9/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccL9ZzXg.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/c++/9
+         /usr/include/aarch64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/aarch64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/aarch64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 76f300a9566415b293c4e87b0a05621d
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+         as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccL9ZzXg.s
+        GNU assembler version 2.34 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+        Linking CXX executable cmTC_eeac7
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeac7.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_eeac7
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper
+        Target: aarch64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_eeac7' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+         /usr/lib/gcc/aarch64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckBQKlJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_eeac7 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+        collect2 version 9.4.0
+        /usr/bin/ld -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckBQKlJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_eeac7 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.34
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_eeac7' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64'
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:137 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/c++/9]
+          add: [/usr/include/aarch64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/aarch64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/aarch64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/aarch64-linux-gnu/c++/9] ==> [/usr/include/aarch64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/aarch64-linux-gnu/9/include] ==> [/usr/lib/gcc/aarch64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/aarch64-linux-gnu] ==> [/usr/include/aarch64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/9;/usr/include/aarch64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/aarch64-linux-gnu/9/include;/usr/local/include;/usr/include/aarch64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:173 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV']
+        ignore line: []
+        ignore line: [Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eeac7/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_eeac7.dir/build.make CMakeFiles/cmTC_eeac7.dir/build]
+        ignore line: [make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Xo8CcV']
+        ignore line: [Building CXX object CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -c /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/9/cc1plus -quiet -v -imultiarch aarch64-linux-gnu -D_GNU_SOURCE /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -o /tmp/ccL9ZzXg.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/aarch64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/aarch64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/aarch64-linux-gnu/9/../../../../aarch64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/aarch64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/aarch64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/aarch64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (aarch64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 76f300a9566415b293c4e87b0a05621d]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ as -v -EL -mabi=lp64 -o CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccL9ZzXg.s]
+        ignore line: [GNU assembler version 2.34 (aarch64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [Linking CXX executable cmTC_eeac7]
+        ignore line: [/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeac7.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v -rdynamic CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_eeac7]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper]
+        ignore line: [Target: aarch64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=aarch64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-libquadmath --disable-libquadmath-support --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --enable-fix-cortex-a53-843419 --disable-werror --enable-checking=release --build=aarch64-linux-gnu --host=aarch64-linux-gnu --target=aarch64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/aarch64-linux-gnu/9/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib/:/lib/aarch64-linux-gnu/:/lib/../lib/:/usr/lib/aarch64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/aarch64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_eeac7' '-shared-libgcc' '-mlittle-endian' '-mabi=lp64']
+        link line: [ /usr/lib/gcc/aarch64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckBQKlJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_eeac7 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cckBQKlJ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [--fix-cortex-a53-843419] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_eeac7] ==> ignore
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/aarch64-linux-gnu] ==> dir [/lib/aarch64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/aarch64-linux-gnu] ==> dir [/usr/lib/aarch64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/aarch64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o]
+        ignore line: [collect2 version 9.4.0]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/aarch64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/aarch64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckBQKlJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux --fix-cortex-a53-843419 -pie -z now -z relro -o cmTC_eeac7 /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o /usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o -L/usr/lib/gcc/aarch64-linux-gnu/9 -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu -L/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib -L/lib/aarch64-linux-gnu -L/lib/../lib -L/usr/lib/aarch64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/aarch64-linux-gnu/9/../../.. -v CMakeFiles/cmTC_eeac7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o /usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/Scrt1.o] ==> [/usr/lib/aarch64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crti.o] ==> [/usr/lib/aarch64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu/crtn.o] ==> [/usr/lib/aarch64-linux-gnu/crtn.o]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9] ==> [/usr/lib/gcc/aarch64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/aarch64-linux-gnu] ==> [/lib/aarch64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/aarch64-linux-gnu] ==> [/usr/lib/aarch64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/aarch64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/aarch64-linux-gnu/Scrt1.o;/usr/lib/aarch64-linux-gnu/crti.o;/usr/lib/gcc/aarch64-linux-gnu/9/crtbeginS.o;/usr/lib/gcc/aarch64-linux-gnu/9/crtendS.o;/usr/lib/aarch64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/aarch64-linux-gnu/9;/usr/lib/aarch64-linux-gnu;/usr/lib;/lib/aarch64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:210 (cmake_determine_linker_id)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:14 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.34
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/external/pybind11/tools/pybind11Tools.cmake:23 (check_cxx_compiler_flag)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/external/pybind11/CMakeLists.txt:33 (include)"
+    checks:
+      - "Performing Test HAS_CPP14_FLAG"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RoLFeX"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RoLFeX"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/external/pybind11/tools"
+    buildResult:
+      variable: "HAS_CPP14_FLAG"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RoLFeX'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_02278/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_02278.dir/build.make CMakeFiles/cmTC_02278.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RoLFeX'
+        Building CXX object CMakeFiles/cmTC_02278.dir/src.cxx.o
+        /usr/bin/c++ -DHAS_CPP14_FLAG  -std=c++14 -o CMakeFiles/cmTC_02278.dir/src.cxx.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RoLFeX/src.cxx
+        Linking CXX executable cmTC_02278
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02278.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/cmTC_02278.dir/src.cxx.o -o cmTC_02278
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RoLFeX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/check_if_sse4_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/set_compiler_specific_options.cmake:13 (include)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build"
+    buildResult:
+      variable: "test_for_sse4_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4 -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4 /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4 /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Scanning dependencies of target make_this_build_fail
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        [ 50%] Building CXX object CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o
+        /usr/bin/c++    -o CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4/this_file_doesnt_compile.cpp
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4/this_file_doesnt_compile.cpp:2:2: error: #error "This file doesn't compile!"
+            2 | #error "This file doesn't compile!"
+              |  ^~~~~
+        make[2]: *** [CMakeFiles/make_this_build_fail.dir/build.make:75: CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o] Error 1
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/make_this_build_fail.dir/all] Error 2
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/check_if_avx_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/set_compiler_specific_options.cmake:17 (include)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build"
+    buildResult:
+      variable: "test_for_avx_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Scanning dependencies of target make_this_build_fail
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        [ 50%] Building CXX object CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o
+        /usr/bin/c++    -o CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx/this_file_doesnt_compile.cpp
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx/this_file_doesnt_compile.cpp:2:2: error: #error "This file doesn't compile!"
+            2 | #error "This file doesn't compile!"
+              |  ^~~~~
+        make[2]: *** [CMakeFiles/make_this_build_fail.dir/build.make:75: CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o] Error 1
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/make_this_build_fail.dir/all] Error 2
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/set_compiler_specific_options.cmake:21 (include)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        /usr/bin/make  -f CMakeFiles/neon_test.dir/build.make CMakeFiles/neon_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/depend.internal".
+        Scanning dependencies of target neon_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        /usr/bin/make  -f CMakeFiles/neon_test.dir/build.make CMakeFiles/neon_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        [ 50%] Building CXX object CMakeFiles/neon_test.dir/neon_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/neon_test.dir/neon_test.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon/neon_test.cpp
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon/neon_test.cpp:3:2: error: #error "No NEON"
+            3 | #error "No NEON"
+              |  ^~~~~
+        make[2]: *** [CMakeFiles/neon_test.dir/build.make:75: CMakeFiles/neon_test.dir/neon_test.cpp.o] Error 1
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/neon_test.dir/all] Error 2
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:336 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-hToV0V"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-hToV0V"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-hToV0V'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cc1ed/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_cc1ed.dir/build.make CMakeFiles/cmTC_cc1ed.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-hToV0V'
+        Building C object CMakeFiles/cmTC_cc1ed.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_cc1ed.dir/src.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-hToV0V/src.c
+        Linking C executable cmTC_cc1ed
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc1ed.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_cc1ed.dir/src.c.o -o cmTC_cc1ed
+        /usr/bin/ld: CMakeFiles/cmTC_cc1ed.dir/src.c.o: in function `main':
+        src.c:(.text+0x48): undefined reference to `pthread_create'
+        /usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
+        /usr/bin/ld: src.c:(.text+0x58): undefined reference to `pthread_cancel'
+        /usr/bin/ld: src.c:(.text+0x64): undefined reference to `pthread_join'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_cc1ed.dir/build.make:99: cmTC_cc1ed] Error 1
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-hToV0V'
+        make: *** [Makefile:127: cmTC_cc1ed/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:175 (_threads_check_lib)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:336 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-KWy1XV"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-KWy1XV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-KWy1XV'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0117d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_0117d.dir/build.make CMakeFiles/cmTC_0117d.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-KWy1XV'
+        Building C object CMakeFiles/cmTC_0117d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_0117d.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-KWy1XV/CheckFunctionExists.c
+        Linking C executable cmTC_0117d
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0117d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_0117d.dir/CheckFunctionExists.c.o -o cmTC_0117d  -lpthreads
+        /usr/bin/ld: cannot find -lpthreads
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_0117d.dir/build.make:99: cmTC_0117d] Error 1
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-KWy1XV'
+        make: *** [Makefile:127: cmTC_0117d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:112 (CHECK_LIBRARY_EXISTS)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindThreads.cmake:176 (_threads_check_lib)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:336 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-YuwuCV"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-YuwuCV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-YuwuCV'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_42cef/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_42cef.dir/build.make CMakeFiles/cmTC_42cef.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-YuwuCV'
+        Building C object CMakeFiles/cmTC_42cef.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_42cef.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-YuwuCV/CheckFunctionExists.c
+        Linking C executable cmTC_42cef
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42cef.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_42cef.dir/CheckFunctionExists.c.o -o cmTC_42cef  -lpthread
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-YuwuCV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:399 (include)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-jz9efY"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-jz9efY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-jz9efY'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e100f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e100f.dir/build.make CMakeFiles/cmTC_e100f.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-jz9efY'
+        Building C object CMakeFiles/cmTC_e100f.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -fPIE -o CMakeFiles/cmTC_e100f.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-jz9efY/CheckFunctionExists.c
+        Linking C executable cmTC_e100f
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e100f.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_e100f.dir/CheckFunctionExists.c.o -o cmTC_e100f  /usr/lib/aarch64-linux-gnu/libX11.so /usr/lib/aarch64-linux-gnu/libXext.so
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-jz9efY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:399 (include)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-T2khEV"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-T2khEV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-T2khEV'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_65067/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_65067.dir/build.make CMakeFiles/cmTC_65067.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-T2khEV'
+        Building C object CMakeFiles/cmTC_65067.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -fPIE -o CMakeFiles/cmTC_65067.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-T2khEV/CheckFunctionExists.c
+        Linking C executable cmTC_65067
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65067.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_65067.dir/CheckFunctionExists.c.o -o cmTC_65067
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-T2khEV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:399 (include)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-x50lQW"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-x50lQW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-x50lQW'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4164d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4164d.dir/build.make CMakeFiles/cmTC_4164d.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-x50lQW'
+        Building C object CMakeFiles/cmTC_4164d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -fPIE -o CMakeFiles/cmTC_4164d.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-x50lQW/CheckFunctionExists.c
+        Linking C executable cmTC_4164d
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4164d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect -rdynamic CMakeFiles/cmTC_4164d.dir/CheckFunctionExists.c.o -o cmTC_4164d
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-x50lQW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:399 (include)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WRvP7V"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WRvP7V"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WRvP7V'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_efcb7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_efcb7.dir/build.make CMakeFiles/cmTC_efcb7.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WRvP7V'
+        Building C object CMakeFiles/cmTC_efcb7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -fPIE -o CMakeFiles/cmTC_efcb7.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WRvP7V/CheckFunctionExists.c
+        Linking C executable cmTC_efcb7
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efcb7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove -rdynamic CMakeFiles/cmTC_efcb7.dir/CheckFunctionExists.c.o -o cmTC_efcb7
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WRvP7V'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:399 (include)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WyzOpZ"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WyzOpZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WyzOpZ'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_28be7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_28be7.dir/build.make CMakeFiles/cmTC_28be7.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WyzOpZ'
+        Building C object CMakeFiles/cmTC_28be7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -fPIE -o CMakeFiles/cmTC_28be7.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WyzOpZ/CheckFunctionExists.c
+        Linking C executable cmTC_28be7
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28be7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat -rdynamic CMakeFiles/cmTC_28be7.dir/CheckFunctionExists.c.o -o cmTC_28be7
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WyzOpZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:399 (include)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Tt4IZX"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Tt4IZX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Tt4IZX'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_26309/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_26309.dir/build.make CMakeFiles/cmTC_26309.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Tt4IZX'
+        Building C object CMakeFiles/cmTC_26309.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -fPIE -o CMakeFiles/cmTC_26309.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Tt4IZX/CheckFunctionExists.c
+        Linking C executable cmTC_26309
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26309.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_26309.dir/CheckFunctionExists.c.o -o cmTC_26309  -lICE
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Tt4IZX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_libpng.cmake:25 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:443 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build"
+    buildResult:
+      variable: "test_for_libpng_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        /usr/bin/make  -f CMakeFiles/libpng_test.dir/build.make CMakeFiles/libpng_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/depend.internal".
+        Scanning dependencies of target libpng_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        /usr/bin/make  -f CMakeFiles/libpng_test.dir/build.make CMakeFiles/libpng_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        [ 50%] Building CXX object CMakeFiles/libpng_test.dir/libpng_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/libpng_test.dir/libpng_test.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng/libpng_test.cpp
+        [100%] Linking CXX executable libpng_test
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/libpng_test.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/libpng_test.dir/libpng_test.cpp.o -o libpng_test  -lpng -lz
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        [100%] Built target libpng_test
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_libjpeg.cmake:25 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:504 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build"
+    buildResult:
+      variable: "test_for_libjpeg_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        /usr/bin/make  -f CMakeFiles/libjpeg_test.dir/build.make CMakeFiles/libjpeg_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/depend.internal".
+        Scanning dependencies of target libjpeg_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        /usr/bin/make  -f CMakeFiles/libjpeg_test.dir/build.make CMakeFiles/libjpeg_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        [ 50%] Building CXX object CMakeFiles/libjpeg_test.dir/libjpeg_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/libjpeg_test.dir/libjpeg_test.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg/libjpeg_test.cpp
+        [100%] Linking CXX executable libjpeg_test
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/libjpeg_test.dir/link.txt --verbose=1
+        /usr/bin/c++ -rdynamic CMakeFiles/libjpeg_test.dir/libjpeg_test.cpp.o -o libjpeg_test  -ljpeg
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        [100%] Built target libjpeg_test
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:73 (CHECK_FUNCTION_EXISTS)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for cblas_ddot"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Hf7MWY"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Hf7MWY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "PKGCFG_HAVE_CBLAS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Hf7MWY'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b9b50/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b9b50.dir/build.make CMakeFiles/cmTC_b9b50.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Hf7MWY'
+        Building C object CMakeFiles/cmTC_b9b50.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cblas_ddot -fPIE -o CMakeFiles/cmTC_b9b50.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Hf7MWY/CheckFunctionExists.c
+        Linking C executable cmTC_b9b50
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b9b50.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cblas_ddot -rdynamic CMakeFiles/cmTC_b9b50.dir/CheckFunctionExists.c.o -o cmTC_b9b50
+        /usr/bin/ld: CMakeFiles/cmTC_b9b50.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `cblas_ddot'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_b9b50.dir/build.make:99: cmTC_b9b50] Error 1
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-Hf7MWY'
+        make: *** [Makefile:127: cmTC_b9b50/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckTypeSize.cmake:250 (check_include_file)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:85 (check_type_size)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-AyxkXX"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-AyxkXX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-AyxkXX'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f4b2f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f4b2f.dir/build.make CMakeFiles/cmTC_f4b2f.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-AyxkXX'
+        Building C object CMakeFiles/cmTC_f4b2f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_f4b2f.dir/CheckIncludeFile.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-AyxkXX/CheckIncludeFile.c
+        Linking C executable cmTC_f4b2f
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4b2f.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_f4b2f.dir/CheckIncludeFile.c.o -o cmTC_f4b2f
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-AyxkXX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckTypeSize.cmake:251 (check_include_file)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:85 (check_type_size)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-LrjsxZ"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-LrjsxZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-LrjsxZ'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3ef43/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3ef43.dir/build.make CMakeFiles/cmTC_3ef43.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-LrjsxZ'
+        Building C object CMakeFiles/cmTC_3ef43.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_3ef43.dir/CheckIncludeFile.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-LrjsxZ/CheckIncludeFile.c
+        Linking C executable cmTC_3ef43
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ef43.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_3ef43.dir/CheckIncludeFile.c.o -o cmTC_3ef43
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-LrjsxZ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckTypeSize.cmake:252 (check_include_file)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:85 (check_type_size)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WmI7sY"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WmI7sY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WmI7sY'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bc9db/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bc9db.dir/build.make CMakeFiles/cmTC_bc9db.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WmI7sY'
+        Building C object CMakeFiles/cmTC_bc9db.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_bc9db.dir/CheckIncludeFile.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WmI7sY/CheckIncludeFile.c
+        Linking C executable cmTC_bc9db
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bc9db.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_bc9db.dir/CheckIncludeFile.c.o -o cmTC_bc9db
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-WmI7sY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckTypeSize.cmake:146 (try_compile)"
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:85 (check_type_size)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Check size of void*"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-MaUk5X"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-MaUk5X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "HAVE_SIZE_OF_VOID_PTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-MaUk5X'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7e728/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7e728.dir/build.make CMakeFiles/cmTC_7e728.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-MaUk5X'
+        Building C object CMakeFiles/cmTC_7e728.dir/SIZE_OF_VOID_PTR.c.o
+        /usr/bin/cc   -fPIE -o CMakeFiles/cmTC_7e728.dir/SIZE_OF_VOID_PTR.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-MaUk5X/SIZE_OF_VOID_PTR.c
+        Linking C executable cmTC_7e728
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e728.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_7e728.dir/SIZE_OF_VOID_PTR.c.o -o cmTC_7e728
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-MaUk5X'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:210 (CHECK_FUNCTION_EXISTS)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for sgetrf_single"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-ivVe4Y"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-ivVe4Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "OPENBLAS_HAS_LAPACK"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-ivVe4Y'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_82e00/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_82e00.dir/build.make CMakeFiles/cmTC_82e00.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-ivVe4Y'
+        Building C object CMakeFiles/cmTC_82e00.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgetrf_single -fPIE -o CMakeFiles/cmTC_82e00.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-ivVe4Y/CheckFunctionExists.c
+        Linking C executable cmTC_82e00
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82e00.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgetrf_single -rdynamic CMakeFiles/cmTC_82e00.dir/CheckFunctionExists.c.o -o cmTC_82e00  /usr/lib/aarch64-linux-gnu/libopenblas.so
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-ivVe4Y'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:289 (CHECK_FUNCTION_EXISTS)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for cblas_ddot"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-7Rf8FX"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-7Rf8FX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "FOUND_BLAS_HAS_CBLAS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-7Rf8FX'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3f660/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3f660.dir/build.make CMakeFiles/cmTC_3f660.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-7Rf8FX'
+        Building C object CMakeFiles/cmTC_3f660.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cblas_ddot -fPIE -o CMakeFiles/cmTC_3f660.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-7Rf8FX/CheckFunctionExists.c
+        Linking C executable cmTC_3f660
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f660.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cblas_ddot -rdynamic CMakeFiles/cmTC_3f660.dir/CheckFunctionExists.c.o -o cmTC_3f660  /usr/lib/aarch64-linux-gnu/libopenblas.so
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-7Rf8FX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:451 (check_function_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for sgesv"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RI4DyY"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RI4DyY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "LAPACK_FOUND_C_UNMANGLED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RI4DyY'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c8778/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c8778.dir/build.make CMakeFiles/cmTC_c8778.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RI4DyY'
+        Building C object CMakeFiles/cmTC_c8778.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgesv -fPIE -o CMakeFiles/cmTC_c8778.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RI4DyY/CheckFunctionExists.c
+        Linking C executable cmTC_c8778
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8778.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgesv -rdynamic CMakeFiles/cmTC_c8778.dir/CheckFunctionExists.c.o -o cmTC_c8778
+        /usr/bin/ld: CMakeFiles/cmTC_c8778.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `sgesv'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_c8778.dir/build.make:99: cmTC_c8778] Error 1
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-RI4DyY'
+        make: *** [Makefile:127: cmTC_c8778/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_blas.cmake:452 (check_function_exists)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for sgesv_"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-08t4AV"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-08t4AV"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_POSITION_INDEPENDENT_CODE: "True"
+    buildResult:
+      variable: "LAPACK_FOUND_C_MANGLED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-08t4AV'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_90991/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_90991.dir/build.make CMakeFiles/cmTC_90991.dir/build
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-08t4AV'
+        Building C object CMakeFiles/cmTC_90991.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgesv_ -fPIE -o CMakeFiles/cmTC_90991.dir/CheckFunctionExists.c.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-08t4AV/CheckFunctionExists.c
+        Linking C executable cmTC_90991
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90991.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgesv_ -rdynamic CMakeFiles/cmTC_90991.dir/CheckFunctionExists.c.o -o cmTC_90991
+        /usr/bin/ld: CMakeFiles/cmTC_90991.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text+0x10): undefined reference to `sgesv_'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_90991.dir/build.make:99: cmTC_90991] Error 1
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/CMakeFiles/CMakeScratch/TryCompile-08t4AV'
+        make: *** [Makefile:127: cmTC_90991/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:704 (try_compile)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build"
+    buildResult:
+      variable: "cuda_test_compile_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        /usr/bin/make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        [ 50%] Building NVCC (Device) object CMakeFiles/cuda_test.dir/cuda_test_generated_cuda_test.cu.o
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E make_directory /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//.
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -D verbose:BOOL=1 -D build_configuration:STRING= -D generated_file:STRING=/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o -D generated_cubin_file:STRING=/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o.cubin.txt -P /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.cmake
+        -- Removing /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        -- Generating dependency file: /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend
+        /usr/local/cuda-11.4/bin/nvcc -M -D__CUDACC__ /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda/cuda_test.cu -o /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend -ccbin /usr/bin/cc -m64 -DDLIB_USE_CUDA -arch=sm_50 -std=c++11 -D__STRICT_ANSI__ -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES -DNVCC -I/usr/local/cuda-11.4/include -I/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda/../../cuda
+        nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+        -- Generating temporary cmake readable file: /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -D input_file:FILEPATH=/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend -D output_file:FILEPATH=/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp -D verbose=1 -P /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/share/cmake-3.29/Modules/FindCUDA/make2cmake.cmake
+        -- Copy if different /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp to /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E copy_if_different /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend
+        -- Removing /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp and /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E rm -f /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend
+        -- Generating /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        /usr/local/cuda-11.4/bin/nvcc /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda/cuda_test.cu -c -o /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o -ccbin /usr/bin/cc -m64 -DDLIB_USE_CUDA -arch=sm_50 -std=c++11 -D__STRICT_ANSI__ -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES -DNVCC -I/usr/local/cuda-11.4/include -I/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda/../../cuda
+        nvcc warning : The 'compute_35', 'compute_37', 'compute_50', 'sm_35', 'sm_37' and 'sm_50' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+        Generated /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o successfully.
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cuda /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles/cuda_test.dir/DependInfo.cmake
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        /usr/bin/make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        [100%] Linking CXX static library libcuda_test.a
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -P CMakeFiles/cuda_test.dir/cmake_clean_target.cmake
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cuda_test.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcuda_test.a CMakeFiles/cuda_test.dir/cuda_test_generated_cuda_test.cu.o
+        /usr/bin/ranlib libcuda_test.a
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        [100%] Built target cuda_test
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build'
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cuda_test_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:720 (try_compile)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cudnn"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build"
+    buildResult:
+      variable: "cudnn_test_compile_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cudnn -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        /usr/bin/make  -f CMakeFiles/cudnn_test.dir/build.make CMakeFiles/cudnn_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cudnn /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_cudnn /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles/cudnn_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles/cudnn_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles/cudnn_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles/cudnn_test.dir/depend.internal".
+        Scanning dependencies of target cudnn_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        /usr/bin/make  -f CMakeFiles/cudnn_test.dir/build.make CMakeFiles/cudnn_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        [ 50%] Building CXX object CMakeFiles/cudnn_test.dir/cudnn_dlibapi.cpp.o
+        /usr/bin/c++ -DDLIB_USE_CUDA -I/usr/local/cuda-11.4/include  -o CMakeFiles/cudnn_test.dir/cudnn_dlibapi.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cuda/cudnn_dlibapi.cpp
+        [100%] Linking CXX static library libcudnn_test.a
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -P CMakeFiles/cudnn_test.dir/cmake_clean_target.cmake
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_link_script CMakeFiles/cudnn_test.dir/link.txt --verbose=1
+        /usr/bin/ar qc libcudnn_test.a CMakeFiles/cudnn_test.dir/cudnn_dlibapi.cpp.o
+        /usr/bin/ranlib libcudnn_test.a
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        [100%] Built target cudnn_test
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build'
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/cudnn_test_build/CMakeFiles 0
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/check_if_sse4_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/set_compiler_specific_options.cmake:13 (include)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build"
+    buildResult:
+      variable: "test_for_sse4_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4 -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4 /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4 /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Scanning dependencies of target make_this_build_fail
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        [ 50%] Building CXX object CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o
+        /usr/bin/c++    -o CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4/this_file_doesnt_compile.cpp
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_sse4/this_file_doesnt_compile.cpp:2:2: error: #error "This file doesn't compile!"
+            2 | #error "This file doesn't compile!"
+              |  ^~~~~
+        make[2]: *** [CMakeFiles/make_this_build_fail.dir/build.make:75: CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o] Error 1
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/make_this_build_fail.dir/all] Error 2
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/sse4_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/check_if_avx_instructions_executable_on_host.cmake:13 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/set_compiler_specific_options.cmake:17 (include)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build"
+    buildResult:
+      variable: "test_for_avx_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build/CMakeFiles/make_this_build_fail.dir/depend.internal".
+        Scanning dependencies of target make_this_build_fail
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        /usr/bin/make  -f CMakeFiles/make_this_build_fail.dir/build.make CMakeFiles/make_this_build_fail.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        [ 50%] Building CXX object CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o
+        /usr/bin/c++    -o CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx/this_file_doesnt_compile.cpp
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_avx/this_file_doesnt_compile.cpp:2:2: error: #error "This file doesn't compile!"
+            2 | #error "This file doesn't compile!"
+              |  ^~~~~
+        make[2]: *** [CMakeFiles/make_this_build_fail.dir/build.make:75: CMakeFiles/make_this_build_fail.dir/this_file_doesnt_compile.cpp.o] Error 1
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/make_this_build_fail.dir/all] Error 2
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/avx_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/check_if_neon_available.cmake:14 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/set_compiler_specific_options.cmake:21 (include)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:33 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build"
+    buildResult:
+      variable: "test_for_neon_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        /usr/bin/make  -f CMakeFiles/neon_test.dir/build.make CMakeFiles/neon_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build/CMakeFiles/neon_test.dir/depend.internal".
+        Scanning dependencies of target neon_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        /usr/bin/make  -f CMakeFiles/neon_test.dir/build.make CMakeFiles/neon_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        [ 50%] Building CXX object CMakeFiles/neon_test.dir/neon_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/neon_test.dir/neon_test.cpp.o -c /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon/neon_test.cpp
+        /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_neon/neon_test.cpp:3:2: error: #error "No NEON"
+            3 | #error "No NEON"
+              |  ^~~~~
+        make[2]: *** [CMakeFiles/neon_test.dir/build.make:75: CMakeFiles/neon_test.dir/neon_test.cpp.o] Error 1
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:83: CMakeFiles/neon_test.dir/all] Error 2
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/neon_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_libpng.cmake:25 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:443 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build"
+    buildResult:
+      variable: "test_for_libpng_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        /usr/bin/make  -f CMakeFiles/libpng_test.dir/build.make CMakeFiles/libpng_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libpng /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles/libpng_test.dir/depend.internal".
+        Scanning dependencies of target libpng_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        /usr/bin/make  -f CMakeFiles/libpng_test.dir/build.make CMakeFiles/libpng_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        make[2]: Nothing to be done for 'CMakeFiles/libpng_test.dir/build'.
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        [100%] Built target libpng_test
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build'
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libpng_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/find_libjpeg.cmake:25 (try_compile)"
+      - "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/CMakeLists.txt:504 (include)"
+    directories:
+      source: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg"
+      binary: "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build"
+    buildResult:
+      variable: "test_for_libjpeg_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        
+        Run Build Command(s): /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -S/home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg -B/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        /usr/bin/make  -f CMakeFiles/libjpeg_test.dir/build.make CMakeFiles/libjpeg_test.dir/depend
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        cd /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build && /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_depends "Unix Makefiles" /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg /home/ai/ai/snowball/backend/idcard/dlib-19.24/dlib/cmake_utils/test_for_libjpeg /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/DependInfo.cmake
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/DependInfo.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/depend.internal".
+        Dependee "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/depend.internal".
+        Scanning dependencies of target libjpeg_test
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        /usr/bin/make  -f CMakeFiles/libjpeg_test.dir/build.make CMakeFiles/libjpeg_test.dir/build
+        make[2]: Entering directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        make[2]: Nothing to be done for 'CMakeFiles/libjpeg_test.dir/build'.
+        make[2]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        [100%] Built target libjpeg_test
+        make[1]: Leaving directory '/home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build'
+        /home/ai/ai/snowball/backend/venv/lib/python3.10/site-packages/cmake/data/bin/cmake -E cmake_progress_start /home/ai/ai/snowball/backend/idcard/dlib-19.24/build/temp.linux-aarch64-cpython-310/dlib_build/test_for_libjpeg_build/CMakeFiles 0
+        
+      exitCode: 0
+...
