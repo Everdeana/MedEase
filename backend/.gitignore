@@ -1,5 +1,3 @@
 venv/
 faiss_index/
-chatbot/
-idcard/
 model/

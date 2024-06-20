@@ -94,8 +94,13 @@ def get_advice(request):
             response = openai.chat.completions.create(
                 model="gpt-3.5-turbo",  # 최신 모델 사용
                 messages=[
+<<<<<<< HEAD
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": f"Please provide simple advice for the disease in korean: {disease}"}
+=======
+                    {"role": "system", "content": "넌 의사야."},
+                    {"role": "user", "content": f"이 질병에 대해 간단한 조언 부탁해.: {disease}"}
+>>>>>>> 5d06aa4719b25fda5b00b043458b870437184b98
                 ],
                 max_tokens=250
             )

@@ -1,0 +1,42 @@
+/* WebcamCapture.css */
+body {
+  background-color: black; /* 검정색 배경 */
+  color: white; /* 텍스트 색상 */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.title, .subtitle, .status {
+  margin: 10px 0;
+  font-weight: bold; /* 폰트 굵게 */
+  font-size: 1.5em; /* 글씨 크기 크게 */
+}
+
+.subtitle {
+  font-weight: bold; /* 폰트 굵게 */
+  font-size: 1.5em; /* 글씨 크기 크게 */
+}
+
+.webcam {
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}
+
+.image {
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+  border: 5px solid #fff;
+  border-radius: 10px;
+}

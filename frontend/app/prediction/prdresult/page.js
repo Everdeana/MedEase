@@ -20,10 +20,10 @@ import { IoIosArrowBack } from "react-icons/io";
 import NavigationBar from '../../components/NavigationBar';
 
 // LoadingProcess 컴포넌트 import(로딩중... 처리)
-import LoadingProcess from "../../components/loadingProcess";
+import LoadingProcess from "../../components/LoadingProcess";
 
 // axios 기본 URL 설정. (모든 axios 요청이 이 기본 URL을 사용)
-axios.defaults.baseURL = "http://211.216.177.2:12011/api";
+// axios.defaults.baseURL = "http://211.216.177.2:12011/api";
 
 // Result 컴포넌트 -> default export
 export default function Result() {
@@ -53,7 +53,7 @@ export default function Result() {
             const symptomsList = JSON.parse(savedSymptoms);
 
             // 증상 데이터를 Django 서버로 전송
-            axios.post('/prediction/', { symptoms: symptomsList })
+            axios.post('http://211.216.177.2:12011/api/prediction/', { symptoms: symptomsList })
                 .then(response => {
                     // Django 서버로부터 받은 데이터를 콘솔에 출력
                     console.log('Data sent to Django:', response.data);
@@ -67,7 +67,7 @@ export default function Result() {
                         setAdviceLoading(true);
 
                         // 가장 높은 확률의 질병에 대한 설명을 ChatGPT API를 통해 요청
-                        axios.post('/get_advice/', { disease: response.data.predictions[0].disease })
+                        axios.post('http://211.216.177.2:12011/api/get_advice/', { disease: response.data.predictions[0].disease })
                             .then(res => {
                                 // 받은 내용을 상태에 저장
                                 setAdvice(res.data.advice);
@@ -118,7 +118,7 @@ export default function Result() {
                     <div className="text-center mb-4">
                         {/* 이미지 컴포넌트를 사용하여 로고 표시 */}
                         <Image
-                            src="/assets/image/logo.png"
+                            src="/assets/image/virus.png"
                             alt="바이러스 이미지"
                             width={100}
                             height={100}
@@ -128,7 +128,7 @@ export default function Result() {
                         {predictions.length > 0 && (
                             <div>
                                 {/* 사용자의 예상 질병 제목 표시 */}
-                                <p className="text-lg font-bold text-blue-600">유저님의 예상 질병은</p>
+                                <p className="text-lg font-bold text-blue-600">Woojin님의 예상 질병은</p>
                                 {/* 각 예측 결과를 순위와 함께 표시 */}
                                 {predictions.map((prediction, index) => (
                                     <p key={index} className="text-md text-blue-500">
@@ -149,7 +149,7 @@ export default function Result() {
                     <p className="text-center text-gray-500 mb-4">증상이 지속되거나 악화된 경우 <br /> 의료 전문가의 상담을 받는 것이 좋아요</p>
                     {/* 병원 예약 버튼 생성 */}
                     <div className="flex justify-center mt-4">
-                        <button className="py-4 px-24 text-black font-bold rounded-full bg-gradient-to-r from-blue-300 to-blue-400 shadow-lg">
+                        <button onClick={() => router.push('/recommend')} className="py-4 px-24 text-black font-bold rounded-full bg-gradient-to-r from-blue-300 to-blue-400 shadow-lg hover:text-blue-600">
                             병원 예약
                         </button>
                     </div>

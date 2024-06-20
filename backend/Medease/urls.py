@@ -28,11 +28,14 @@ urlpatterns = [
     # example_app 가동용 나중에 삭제
     # path('hello/', hello),
     # path('api/hello/', hello_rest_api, name='hello_rest_api'),
+    
+    path('api/', include('api.urls')),
     path('api/', include('chatbot.urls')),
+    path('api/', include('prediction.urls')),
     path("example_app/", include("example_app.urls")),
     path('idcard/', include("idcard.urls")),
-    path('api/', include('prediction.urls')),
     path('web/', include('web.urls')),
+    path('generateqr/', include('generateqr.urls')),
     # path('api/prediction/', include('prdresult.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
